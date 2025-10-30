@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Inclure les fichiers, sauf le cache -->
+    <include domain="file" path="." />
+    <exclude domain="file" path="cache/" />
+
+    <!-- Inclure les préférences partagées -->
+    <include domain="sharedpref" path="." />
+
+    <!-- Exclure la base de données (restaurée via migration) -->
+    <exclude domain="database" />
+</full-backup-content>
